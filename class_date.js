@@ -1,34 +1,33 @@
-function Date(day, month, year) {
-	this.day = day;
-	this.month = month;
-	this.year = year;
-	this.getDay = function () {
+class Date {
+	constructor(day, month, year) {
+		this.day = day;
+		this.month = month;
+		this.year = year;
+	}
+	getDay() {
 		return this.day;
-	};
-	this.getMonth = function () {
+	}
+	getMonth() {
 		return this.month;
-	};
-	this.getYear = function () {
+	}
+	getYear() {
 		return this.year;
-	};
-	this.setDay = function (day) {
+	}
+	setDay(day) {
 		this.day = day;
-	};
-	this.setMonth = function (month) {
+	}
+	setMonth(month) {
 		this.month = month;
-	};
-	this.setYear = function (year) {
+	}
+	setYear(year) {
 		this.year = year;
-	};
-	this.setDate = function (day, month, year) {
+	}
+	setDate(day, month, year) {
 		this.day = day;
 		this.month = month;
 		this.year = year;
-	};
-	this.toString = function () {
+	}
+	toString() {
 		return this.day + "/" + this.month + "/" + this.year;
-	};
+	}
 }
-let date = new Date(23, 4, 2002);
-console.log(date.setDate(10, 10, 2019));
-console.log(date.toString()); // 10/10/2019
